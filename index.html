@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./Piggy.css">
+    <title>PiggyVest</title>
+</head>
+<body style="background-color: rgb(215, 242, 253);">
+    <div class="container">
+        <div class="header">
+        <div class="logo">
+            <img src="./Asset/logo.svg" alt="">
+            <nav>
+                <a href="#">Save</a>
+                <a href="#">Invest</a>
+                <a href="#">Stories</a>
+                <a href="#">FAQs</a>
+                <a href="#">Resources</a>
+            </nav>
+        </div>
+            <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="create-account">Create free account</button>
+        </div>
+        <img src="./Asset/OIP.jpg" class="menu" style="max-width: 50px;" alt="">
+     </div>
+     <div class="main">
+        <section class="hero">
+            <div class="hero-text">
+                <a class="announcement" href="/reports/2024" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);"><svg width="32" height="32" 
+                    viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 15.9904C31.9832 13.4471 29.9905 11.3781 27.4809 11.2432C28.2923 10.3396 28.7026 9.20001 28.7026 8.05704C28.6902 6.8455 28.2373 5.60924 27.3078 4.6798C25.4973 2.89285 22.6258 2.8389 20.7557 4.51909C20.6905 3.30643 20.1746 2.21066 19.3666 1.40147C18.5012 0.552945 17.3065 0 15.9916 0C13.4483 0.0168581 11.3792 2.00948 11.2443 4.51909C10.3407 3.70765 9.20115 3.29744 8.05817 3.29744C6.84663 3.3098 5.61037 3.76272 4.6798 4.69216C2.89285 6.50272 2.83891 9.37421 4.5191 11.2443C2.00949 11.3792
+                     0.0168581 13.4471 0 15.9916C0 17.3065 0.554079 18.5012 1.40148 19.3666C2.20954 20.1746 3.30644 20.6905 4.5191 20.7557C2.84003 22.6258 2.89285 25.4973 4.6798 27.3078C5.61037 28.2384 6.84551 28.6913 8.05704 28.7026C9.20002 28.7026 10.3396 28.2912 11.2432 27.4809C11.3781 29.9905 13.446 31.9831 15.9905 32C17.3054 32 18.5001 31.4459 19.3654 30.5985C20.1735 29.7905 20.6894 28.6936 20.7545 27.4809C22.6247 29.1611 25.4962 29.1072 27.3067 27.3202C28.2373 26.3896 28.6902 25.1545 28.7014 23.943C28.7014 22.8 28.2901 21.6604 27.4798 20.7568C28.6924 20.6916 29.7893 20.1757 30.5974 19.3677C31.4459 18.5023 31.9989 17.3076 31.9989 15.9927L32 15.9904Z" fill="#FFE201" class="flower"></path><g class="book-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.6667 11.3335C20.6667 10.9653 20.3682 10.6668 20 10.6668L12 10.6668C11.6318 10.6668 11.3333 10.9653 11.3333 11.3335L11.3333 20.6668C11.3333 21.035 11.6318 21.3335 12 21.3335L20 21.3335C20.3682 21.3335 20.6667 21.035 20.6667 20.6668L20.6667 11.3335ZM20 9.3335C21.1046 9.3335 22 10.2289 22 11.3335L22 20.6668C22 21.7714 21.1046 22.6668 20 22.6668L12 22.6668C10.8954 22.6668 10 21.7714 10 20.6668L10 11.3335C10 10.2289 10.8954 9.3335 12 9.3335L20 9.3335Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 14.0002C12 13.632 12.2985 13.3335 12.6667 13.3335H19.3333C19.7015 13.3335 20 13.632 20 14.0002C20 14.3684 19.7015 14.6668 19.3333 14.6668H12.6667C12.2985 14.6668 12 14.3684 12 14.0002Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 12.0002C12 11.632 12.2985 11.3335 12.6667 11.3335H15.3333C15.7015 11.3335 16 11.632 16 12.0002C16 12.3684 15.7015 12.6668 15.3333 12.6668H12.6667C12.2985 12.6668 12 12.3684 12 12.0002Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18 19.3332C18.3682 19.3332 18.6667 19.0347 18.6667 18.6665V17.3332C18.6667 16.965 18.3682 16.6665 18 16.6665H14C13.6318 16.6665 13.3333 16.965 13.3333 17.3332V18.6665C13.3333 19.0347 13.6318 19.3332 14 19.3332H18ZM20 18.6665C20 19.7711 19.1046 20.6665 18 20.6665H14C12.8954 20.6665 12 19.7711 12 18.6665V17.3332C12 16.2286 12.8954 15.3332 14 15.3332H18C19.1046 15.3332 20 16.2286 20 17.3332V18.6665Z" fill="black"></path></g></svg>
+                    <span>The 2024 PiggyVest Savings Report</span><svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"><path d="M1 15L1.95959 8.28283C1.98639 8.09522 1.9864 7.90475 1.95959 7.71715L1 0.999975" 
+                     stroke="#00D9EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="right-arrow"></path></svg></a>
+                <h1>The Better Way to Save & Invest</h1>
+                <p>Piggyvest helps over 5 million customers achieve their financial goals by helping them <br> save and invest with ease.</p>
+                <div class="download-buttons">
+                    <button> <img src="./Asset/google-icon.svg" alt="">On Android</button>
+                    <button><img src="./Asset/apple-icon.svg" alt="">On iPhone</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./Asset/pexels-ketut-subiyanto-4350099.avif" alt="">
+            <div class="frames">
+                <img src="./Asset/Frame 1020.png" class="first" alt="">
+                <img src="./Asset/Frame 78.png" class="second" alt="">
+                <img src="./Asset/Frame 80.png" class="third" alt="">
+                <img src="./Asset/Frame 82.png" class="four" alt="">
+                <img src="./Asset/Frame 79.png" class="five" alt="">
+                <img src="./Asset/Frame 18.png" class="six" alt="">
+            </div>
+            </div>
+        </section>
+    </div>
+    <main>
+        <div class="securitylock">
+            <div class="lock">
+                <img src="./Asset/securitylock.svg" alt="">
+            </div>
+            <div class="lock-text">
+                <h2>Your security is our priority</h2>
+                <p>PiggyVest uses the highest level of Internet Security and it is secured by 256 bits SSL <br> security encryption to ensure that your information is comepletely protected from fraud.</p>
+                <a href="">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>More on our security measures</a>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="text">
+            <h1>Many ways to build your savings</h1>
+            <h4>Earn 12%-22% when you save with any of these PiggyVest plans.</h4>
+        </div>
+    </section>
+
+    <div class="phone-boot">
+<div class="firstboot">
+   <a href="">
+     <h1>Automated Savings</h1>
+    <p>Build a dedicated savings faster on your terms, automatically or manually.</p>
+    <div class="phone-mockup">
+        <img src="./Asset/PB 18 Small.png" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Piggybank
+    </a>
+</a>
+</div>
+<div class="secondboot">
+    <a href="">
+        <h1>Fixed Savings</h1>
+    <p>
+        Lock money away for a fixed duration without having access to it until maturity. It's like having a custom fixed deposit.
+    </p>
+    <div class="phone-mockup-2">
+        <img src="./Asset/SL 22 Small.png" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Safelock
+    </a>
+</a>
+</div>
+
+<div class="thirdboot">
+   <a href="">
+    <h1>Goal-oriented Savings</h1>
+    <p>Reach all your savings goals faster. Save towards multiple goals on your own or with a group.</p>
+    <div class="phone-mockup 3">
+        <img src="./Asset/iphonw.avif" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Target Saving
+    </a>
+</a>
+</div>
+<div class="fourthboot">
+    <a href="">
+    <h1>Flex Naira</h1>
+    <p>Save, transfer, manage, organise, and withdraw your money at any time.</p>
+    <div class="phone-mockup 4">
+        <img src="./Asset/iPhone 14.avif" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Flex Naira
+    </a>
+</a>
+</div>
+<div class="fifthboot">
+    <a href="">
+    <h1>Flex Dollar</h1>
+    <p>Save and grow your money in foreign currencies such as Dollars.</p>
+    <div class="phone-mockup">
+        <img src="./Asset/iphone12.avif" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Flex Dollar
+    </a>
+</a>
+</div>
+<div class="sixthboot">
+    <a href="">
+    <h1>HouseMoney</h1>
+    <p>Plan for your rent and household expenses</p>
+    <div class="phone-mockup">
+        <img src="./Asset/iPhone 14 - 1.png" alt="">
+    </div>
+    <a href="#" class="feature-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        House Money
+    </a>
+</a>
+</div>
+    </div>
+ 
+    <main class="Investment">
+       <div class="Invest-text">
+            <h1>Diverse ways to Invest</h1>
+            <h4>Grow your money and invest for your future confidently.</h4>
+        </div>
+        <div class="Invest-mock">
+            <div class="Invest-mocktext">
+            <h1>
+                Earn Up to 35% returns
+            </h1>
+            <p>
+                Invest securely and confidently on the go. <br> Grow your money confidently by investing in pre-vetted investment opportunities.
+            </p>
+            <a href="#" class="feature-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Learn about Investments
+            </a>
+        </div>
+            <div class="mock-ivt">
+                <img src="./Asset/iphoneInvest.avif" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="saving">
+            <h1>Meet Our Saver of the Month</h1>
+            <p>Every month, we shine a spotlight on one saver, asking them <br> about their savings culture and how Piggyvest has helped them.</p>
+        </div>
+    </section>
+    <div class="video">
+        "<iframe width="560" height="315" src="https://www.youtube.com/embed/2EnGMGxKuII?si=W3oFqPQVcAf-nI1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    </div>
+
+<main class="comments">
+    <div class="fallbackImg">
+        <img src="./Asset/fallbackImg.png" alt="">
+    </div>
+    <div class="Rating">
+        <img src="./Asset/img453cede493.jpeg" alt="">
+        <img src="./Asset/img5d2175e88f.jpeg" alt="">
+        <img src="./Asset/img6ef4f48b4b.jpeg" alt="">
+        <img src="./Asset/img725396eb22.jpeg" alt="">
+        <h1>
+Join 5+ million people who save and invest with us
+        </h1>
+        <button>
+            <img src="./Asset/apple-icon.svg" alt="">Get on Iphone</button>
+        <button>
+            <img src="./Asset/google-icon.svg" alt="">Get on Android</button>
+    </div>
+</main>
+
+<h1 style="text-align: center; font-weight: 600; font-size: 50px;">As featured in</h1>
+<div class="icons">
+    <a href="">
+        <img src="./Asset/tclogo@2x.png" alt="">
+    </a>
+    <a href="">
+        <img src="./Asset/output.png" alt="">
+    </a>
+    <a href=""><img src="./Asset/brand1.png" alt=""></a>
+    <a href=""><img src="./Asset/pym-removebg-preview.svg" alt=""></a>
+    <a href=""><img src="./Asset/fast.svg" alt=""></a>
+    <a href=""><img src="./Asset/cio.svg" alt=""></a>
+</div>
+
+<footer>
+    <div class="piggy-img">
+        <img src="./Asset/logo.svg" alt="">
+        <br>
+        <img src="./Asset/compliance-378fe121550ceac55d0eeb8c5edac2e7.avif" style="max-width: 100px;margin-top: 50px;" alt="">
+    </div>
+    <div class="piggy-list">
+        <ul>
+            <li>Products</li>
+            <a href="">
+                <li>Piggybank</li>
+            </a>
+            <a href="">
+                <li>Invest</li>
+            </a>
+            <a href="">
+                <li>Safelock</li>
+            </a>
+            <a href="">
+                <li>Target Savings</li>
+            </a>
+            <a href="">
+                <li>Flex Naira</li>
+            </a>
+            <a href="">
+                <li>Flex Dollar</li>
+            </a>
+        </ul>
+        <ul>
+            <li>Company</li>
+            <a href="">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>FAQs</li>
+            </a>
+            <a href="">
+                <li>Blog</li>
+            </a>
+        </ul>
+
+        <ul>
+            <li>Legal</li>
+            <a href="">
+                <li>Terms</li>
+            </a>
+            <a href="">
+                <li>Privacy</li>
+            </a>
+            <a href="">
+                <li>Security</li>
+            </a>
+        </ul>
+    </div>
+<div class="piggy-address">
+    <a href="">
+        <img src="./Asset/facebook.svg" alt="">
+    </a>
+    <a href="">
+        <img src="./Asset/instagra.svg" alt="">
+    </a>
+    <a href="">
+        <img src="./Asset/twitter.svg" alt="">
+    </a>
+    <a href="">
+        <img src="./Asset/tiktok.svg" alt="">
+    </a>
+    <a href="">
+        <img src="./Asset/youtube.svg" alt="">
+    </a>
+
+<address>Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</address>
+<br>
+<a href="mailto:">contact@piggyvest.com</a>
+<br>
+<br>
+<a href="tel:+">+234 700 933 9339</a>
+</div>
+</footer>
+<hr>
+<div class="last">
+    <p>Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 9 years, our customers <br> have saved and invested billions of Naira that they would normally be tempted to spend.</p>
+<p>PV Capital Limited is a fund manager duly licensed by the Securities and Exchange <br> <br> Commission (SEC) of Nigeria.</p>
+<p style="color: blue;">2016 - 2025 PiggyTech Global Limited - RC 1405222</p>
+</div>
+    </div>
+</body>
+</html>
